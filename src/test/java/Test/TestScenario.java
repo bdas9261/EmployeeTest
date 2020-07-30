@@ -36,16 +36,21 @@ public class TestScenario extends Base {
 			System.out.println(response.getHeaders());
 		
 	   }
-	@Test(priority=3,enabled =false)
+	@Test(priority=3,enabled =true)
    public void validateResponsebody() {
 		Response response= given().when().get(prop.getProperty("Endpoint"));
 		String responsebody=response.asString();
 		JsonPath jp=new JsonPath(responsebody);
 		Assert.assertEquals(200, jp.get("status"));
-		System.out.println(jp.getString("employeeData.age"));
-		Assert.assertEquals(25, jp.get("employeeData.age").toString());
-		Assert.assertEquals("QA Automation Developer", jp.get("employeeData.role"));
-		Assert.assertEquals("25-02-1994", jp.get("employeeData.role"));
+		String  age=jp.getString("employeeData.age");
+		String aage=age.substring(1, 3);
+		Assert.assertEquals("25", aage);
+		String  role=jp.getString("employeeData.role");
+		String arole=role.substring(1, 24);
+		Assert.assertEquals("QA Automation Developer", arole);
+		String  date=jp.getString("employeeData.dob");
+		String adate=date.substring(1, 11);
+		Assert.assertEquals("25-02-1994", adate);
 		Assert.assertEquals("data retrieved successful", jp.get("message"));
    }
 	@Test(priority=4,enabled =true)
