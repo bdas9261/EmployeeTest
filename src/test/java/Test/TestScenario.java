@@ -53,7 +53,7 @@ public class TestScenario extends Base {
 		Assert.assertEquals("25-02-1994", adate);
 		Assert.assertEquals("data retrieved successful", jp.get("message"));
    }
-	@Test(priority=4,enabled =true)
+	//@Test(priority=4,enabled =true)
 	   public void validateResponsebodywithCompanyname() {
 			Response response= given().when().get(prop.getProperty("Endpoint"));
 			String responsebody=response.asString();
