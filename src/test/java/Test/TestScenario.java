@@ -61,5 +61,9 @@ public class TestScenario extends Base {
 			Assert.assertEquals("ABC Infotech", jp.get("employeeData.company"));
 			
 	   }
-		
+	@Test(priority=5,enabled =true)
+	   public void validatetest5() {
+			System.out.println("test 5 methods");
+			
+	   }
 }
