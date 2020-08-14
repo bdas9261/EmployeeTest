@@ -66,4 +66,9 @@ public class TestScenario extends Base {
 			System.out.println("test 5 methods");
 			
 	   }
+	@Test(priority=6,enabled =true)
+	   public void validatetest6() {
+			System.out.println("test 6 methods");
+			
+	   }
 }
