@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [employeedate_Test]">
+  <test name="employee_Data(failed)">
+    <classes>
+      <class name="Test.Testjob1">
+        <methods>
+          <include name="login"/>
+          <include name="luchbrowser"/>
+        </methods>
+      </class> <!-- Test.Testjob1 -->
+    </classes>
+  </test> <!-- employee_Data(failed) -->
+</suite> <!-- Failed suite [employeedate_Test] -->
