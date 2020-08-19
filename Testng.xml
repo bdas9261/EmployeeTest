@@ -3,7 +3,7 @@
 <suite name="employeedate_Test">  
   <test name="employee_Data">  
     <classes>  
-      <class name="Test.Testjob1"/>  
+      <class name="Test.TestDemo"/>  
     
     </classes>  
   </test> <!-- Test -->  

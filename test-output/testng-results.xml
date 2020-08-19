@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="employeedate_Test" duration-ms="46731" started-at="2020-08-15T18:29:50Z" finished-at="2020-08-15T18:30:36Z">
+  <suite name="employeedate_Test" duration-ms="53" started-at="2020-08-18T12:21:14Z" finished-at="2020-08-18T12:21:14Z">
     <groups>
     </groups>
-    <test name="employee_Data" duration-ms="46731" started-at="2020-08-15T18:29:50Z" finished-at="2020-08-15T18:30:36Z">
-      <class name="Test.Testjob1">
-        <test-method status="PASS" signature="luchbrowser()[pri:0, instance:Test.Testjob1@20322d26]" name="luchbrowser" duration-ms="46090" started-at="2020-08-15T23:59:50Z" finished-at="2020-08-16T00:00:36Z">
+    <test name="employee_Data" duration-ms="53" started-at="2020-08-18T12:21:14Z" finished-at="2020-08-18T12:21:14Z">
+      <class name="Test.TestDemo">
+        <test-method status="PASS" signature="testDemo()[pri:0, instance:Test.TestDemo@3159c4b8]" name="testDemo" duration-ms="21" started-at="2020-08-18T17:51:14Z" finished-at="2020-08-18T17:51:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- luchbrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:Test.Testjob1@20322d26]" name="login" duration-ms="606" started-at="2020-08-16T00:00:36Z" finished-at="2020-08-16T00:00:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- Test.Testjob1 -->
+        </test-method> <!-- testDemo -->
+      </class> <!-- Test.TestDemo -->
     </test> <!-- employee_Data -->
   </suite> <!-- employeedate_Test -->
 </testng-results>
