@@ -1,0 +1,113 @@
+ Q.1-what is the output of this question
+ public class p{
+   int a=10;
+   public void test1(){
+   System.out.println("test1 of parent method");
+}
+   public static void test2(){
+   System.out.println("test2 of parent method");
+}
+}
+
+
+public class c extends p{
+   int a=20;
+   public void test1(){
+   System.out.println("test1 of child method");
+}
+   public static void test2(){
+   System.out.println("test2 of child method");
+}
+    p p1=new c();
+     syso(p1.a);
+ p1.test1();
+ p1.test2();
+}
+
+Q2-reverse each word if the string with outusing charAt Method(Answer we can do this by using string buffer and string builder )
+   String s1="Java class";
+   String[] s2=s1.split(" ");
+      for(String str:s2){
+       for(int i=s2.length()-1;i){
+
+   }
+    
+}
+Q3- two array list conatins intiger find the unique element with out using set interface(Answer we can use arraylist inbuilt method to do this) 
+  ArrayList<Integer>  al1=new ArrayList<>();
+  ArrayList<Integer>  al2=new ArrayList<>();
+  
+Q4.    List<Map<String,String>> people = List.of(
+      Map.of("Name","Andy", "Surname", "Smith", "Age", "17"),
+      Map.of("Name","Bill", "Surname", "Doe", "Age", "20"),
+      Map.of("Name","John", "Surname", "Parker", "Age", "20"),
+      Map.of("Name","Megan", "Surname", "Mitchel", "Age", "21"),
+      Map.of("Name","Susan", "Surname", "Smith", "Age", "43")
+    );
+1.    Extract Names whose Age is greater than 20
+2.    Extract Names having surname as “Smith”
+        for(List  l:people){
+             for(Map.Entry<> e:entrySet()){
+           HashSet<String> hs=e.getentryset();
+         if(hs.contains(e.getKey(20))){
+    System.out.println(e.getKey);
+}
+else{
+   System.out.println(e.getKey);
+}
+}
+}
+
+ 1.    List<Map<String,String>> people = List.of(
+      Map.of("Name","Andy", "Surname", "Smith", "Age", "17"),
+      Map.of("Name","Bill", "Surname", "Doe", "Age", "20"),
+      Map.of("Name","John", "Surname", "Parker", "Age", "20"),
+      Map.of("Name","Megan", "Surname", "Mitchel", "Age", "21"),
+      Map.of("Name","Susan", "Surname", "Smith", "Age", "43")
+    );
+1.    Extract Names whose Age is greater than 20
+2.    Extract Names having surname as “Smith”
+
+from Siddharth Narayan Rath (internal) to everyone:    12:50 PM
+Q5.    Print words of a string in reverse order (Without loop and with loop)
+       Example: 
+                Given “Print words of a string in reverse order”
+                Output: “order reverse in string a of words Print”
+
+  String given="Print words of a string in reverse order";
+  String[] str=given.split(" ");
+    String s=given.reverse();
+
+  
+
+Q6.    Reverse individual words in a given sentence
+                Example:
+                Given “Reverse individual words in a given sentence”
+                Output: “esreveR laudividni sdrow ni a nevig ecnetnes”
+         String given="Reverse individual words in a given sentence";
+String[] str=given.split(" ");
+String s="";
+  for(String st:str){
+      for(int i=st.length();i>=0;i--){
+       s+=st.charAt(i);
+}
+
+}
+System.out.println(s);
+
+
+    
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
